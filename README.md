@@ -98,8 +98,10 @@ colmap model_converter \
     --output_type PLY
 ```
 
-![Original Point Cloud](original_pointcloud.png)
+![Original Point Cloud](visualizations/original_pointcloud.png)
 *Original 3D point cloud reconstruction (40,681 points with RGB colors)*
+![Original Point Cloud in CloudCompare](visualizations/cloudcompare.png)
+*Original 3D point cloud reconstruction in CloudCompare*
 
 ## Stage 2: Point Cloud Transformation
 
@@ -193,10 +195,10 @@ def validate_transformations(original_points, transformed_points,
     error = ||pt_actual - pt_expected||
 ```
 
-![Transformed Point Cloud](transformed_pointcloud.png)
+![Transformed Point Cloud](visualizations/transformed_pointcloud.png)
 *Transformed point cloud after translation, rotation, and scaling to metric units*
 
-![Comparison](comparison_pointcloud.png)
+![Comparison](visualizations/comparison_pointcloud.png)
 *Side-by-side comparison: Original (colored) vs Transformed (blue)*
 
 ## Usage
